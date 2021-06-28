@@ -1,7 +1,7 @@
 from xml.dom.minidom import parse
 import xml.dom.minidom
 import pandas as pd
-
+# git config --global http.sslVerify false
 
 DOMTree = xml.dom.minidom.parse("data/SMP2019_ECISA_Dev.xml")
 collection = DOMTree.documentElement
@@ -14,6 +14,7 @@ result = {
     "last_pre": [],
     "label": []
 }
+
 
 for doc in docs:
 
